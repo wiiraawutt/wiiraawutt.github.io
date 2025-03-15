@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Valentine</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box">
+                <div class="imge">
+                    <img src="imge/p13.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1>PIN ?</h1>
+                    <div class ="input">
+                        <input type="password" id="pinInput" maxlength="6" readonly>
+                    </div>
+                    <div class="enternumber">
+                        <button class="key" onclick="enterpin('1')">1</button>
+                        <button class="key" onclick="enterpin('2')">2</button>
+                        <button class="key" onclick="enterpin('3')">3</button>
+                        <button class="key" onclick="enterpin('4')">4</button>
+                        <button class="key" onclick="enterpin('5')">5</button>
+                        <button class="key" onclick="enterpin('6')">6</button>
+                        <button class="key" onclick="enterpin('7')">7</button>
+                        <button class="key" onclick="enterpin('8')">8</button>
+                        <button class="key" onclick="enterpin('9')">9</button>
+                        <button class="key delete" onclick="enterdelete()">⌫</button>
+                        <button class="key" onclick="enterpin('0')">0</button>
+                        <button class="key clear" onclick="clearpin()">ล้าง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function nextpage1(){
+            window.location.href = "ValentineEnd.html" ;
+        }
+
+        function nextpage2(){
+            window.location.href = "#" ;
+        }
+
+        function enterpin(number) {
+            let pinInput = document.getElementById('pinInput');
+            if (pinInput.value.length < 6 ) {
+                pinInput.value += number;
+            }
+        }
+
+        function enterdelete() {
+            let pinInput = document.getElementById('pinInput');
+            pinInput.value = pinInput.value.slice(0 , -1);
+        }
+
+        function clearpin() {
+            document.getElementById('pinInput').value = "";
+        }
+    </script>
+
+</body>
+</html>

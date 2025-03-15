@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    background: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+    background: none;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imge {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(231, 165, 216);
+    border-radius: 15px 0 0 15px;
+}
+
+.imge img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+.content {
+    display: grid;
+    background-color: rgb(231, 165, 216);
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+.input input {
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+    
+}
+
+.enternumber {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 10px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.enternumber button {
+    height: 50px;
+    width: 50px;
+}
+
+.enternumber .key {
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(142, 1, 116);
+    border: solid 2px rgb(164, 20, 138);
+}
+
+.enternumber .key:hover {
+    background-color: rgb(245, 168, 238);
+}
+
+.enternumber .key:active {
+    background-color: rgb(139, 100, 136);
+}
