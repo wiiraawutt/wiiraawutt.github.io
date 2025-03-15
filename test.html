@@ -40,7 +40,7 @@
     <script>
 
         function nextpage1(){
-            window.location.href = "ValentineEnd.html" ;
+            window.location.href = "musicplayer.html" ;
         }
 
         function nextpage2(){
@@ -51,6 +51,9 @@
             let pinInput = document.getElementById('pinInput');
             if (pinInput.value.length < 6 ) {
                 pinInput.value += number;
+                if (pinInput.value === "241167") {
+                    window.location = "musicplayer.html";
+                }
             }
         }
 

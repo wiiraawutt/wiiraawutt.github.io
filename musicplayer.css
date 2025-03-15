@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(210, 233, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.musicplayer {
+    background: rgb(177, 226, 255);
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px
+}
+
+nav .circle {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    color: rgb(106, 191, 241);
+    box-shadow: 0 10px 20px rgba(51, 106, 177, 0.262);
+}
+
+/* .circle i {
+    color: rgb(106, 191, 241);
+} */
+
+.song-img {
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+    box-shadow: 0 10px 20px rgba(51, 106, 177, 0.262);
+}
+
+.musicplayer h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.musicplayer p {
+    font-size: 14px;
+    color: #707070;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #c8ffff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: rgba(145, 229, 252, 0.792);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(106, 191, 241);
+    box-shadow: 0 10px 20px rgba(51, 106, 177, 0.262);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: rgb(106, 191, 241);
+    color: #fff;
+}
+
+nav .circle:hover {
+    background: rgb(106, 191, 241);
+    color: #fff;
+}
+
+.controls div:hover {
+    background: rgb(106, 191, 241);
+    color: #fff;
+}
+
+nav .circle:active {
+    background: rgb(72, 124, 153);
+}
+
+.controls div:active {
+    background: rgb(72, 124, 153);
+}
